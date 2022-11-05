@@ -1,0 +1,32 @@
+.guide {
+  &-body {
+    scroll-behavior: smooth;
+    body {
+      padding: 20px;
+    }
+  }
+  &-tab {
+    ul {
+      display: flex;
+      flex-grow: wrap;
+    }
+    a {
+      display: block;
+      line-height: 30px;
+    }
+  }
+  &-title {
+    font-size: 40px;
+    padding: 50px 0 30px;
+    border-top: 3px solid rgba($black, 0.3);
+  }
+  &-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: $black;
+    color: $white;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

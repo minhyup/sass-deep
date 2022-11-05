@@ -1,0 +1,92 @@
+// 기본색 정의
+$white: #fff;
+$black: #000;
+$blue: #1d4ed8;
+$gold: #d8b98b;
+$red: #f93232;
+$grey66: #666666;
+$grey4b: #4b4b4b;
+$greyc9: #c9c9c9;
+$grey21: #212121;
+$greyfa: #fafafa;
+$greyea: #eaeaea;
+$greyd7: #d7d7d7;
+$grey99: #999;
+$greyf5: #f5ffff;
+$grey56: #565656;
+$greyaa: #aaaaaa;
+$mint: #00d4ea;
+$orange: #ff6a13;
+$green: #09e27c;
+
+// 이미지 경로
+$url: "../images/";
+
+// 기초 변수 정의
+//$mobile_padding: 32; // 모바일 좌우 여백 합산값
+$web_width: 1280px;
+
+// 이미지
+$select_arrow: "bg_select.svg";
+$select_arrow_disabled: "bg_select_disabled.svg";
+
+// form
+$form_height: 40;
+$form_padding: 12;
+$form_border: $greyd7;
+$form_radius: 4;
+$form_color: $grey4b;
+$form_fs: 14;
+$placeholder: $grey4b;
+//
+$disabled_border: $greyfa;
+$disabled_bg: $white;
+$disabled_color: $greyc9;
+//
+$readonly_border: $black;
+$readonly_bg: $black;
+$readonly_color: $black;
+
+$label_pad: 30;
+$label_lh: 24;
+$label_fs: 12;
+$label_c: $grey4b;
+
+$bg_chk_off: "bg_check_off.svg";
+$bg_chk_on: "bg_check_on.svg";
+
+$bg_ra_off: "bg_radio_off.svg";
+$bg_ra_on: "bg_radio_on.svg";
+$select_pad: 20;
+$select_bg: 20;
+
+// 반응형 정의
+$mobile: 0;
+$tablet: 1024px;
+$web: 1920px;
+
+// 버튼 크기
+// 클래스명, 좌우여백, 높이, 폰트크기
+$btnsize: xxsmall 12 28 12, xsmall 12 32 14, small 12 34 14, regular 20 40 16,
+  large 21 48 14, xlarge 20 60 16;
+
+// 버튼 색상
+// $btncolor: blue $blue $blue $white, white $grey99 $white $grey21,
+//   lightgrey $grey99 $greyf5 $grey4b, white2 $greyd7 $white $grey4b,
+//   darkgrey $grey56 $grey56 $white;
+
+// 버튼 아이콘
+$btnicon: 1 after 10 10 5 "bg_select.svg", 2 before 10 10 5 "bg_select.svg",
+  3 after 16 16 8 "icon_book_white.svg", 4 after 16 16 8 "icon_book_black.svg",
+  5 after 16 16 8 "icon_list.svg";
+
+// 뱃지 크기
+// 클래스명, 좌우여백, 높이, 폰트크기
+$badgesize: small 6 20 10, regular 6 22 10;
+
+// 뱃지 색상
+// $badgecolor: blue $mint $mint $white, orange $orange $orange $white,
+//   green $green $green $white, grey $greyaa $greyaa $white;
+
+// 모서리 둥근
+$radius: 4, 8, 16, 40;

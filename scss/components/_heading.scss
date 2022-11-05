@@ -1,0 +1,19 @@
+.h2 {
+  @include content(before) {
+    display: inline-block;
+    margin-right: 10px;
+    width: rem(8);
+    height: rem(8);
+    background-color: $blue;
+    border-radius: rem(2);
+  }
+
+  font-weight: 700;
+  font-size: rem(14);
+  line-height: 1;
+}
+
+.heading-line {
+  border-bottom: 1px solid $grey99;
+  padding-bottom: rem(16);
+}

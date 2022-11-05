@@ -1,0 +1,75 @@
+%form {
+  width: 100%; // 모바일의 경우 가로 100%
+  padding: 0 rem($form_padding);
+  height: rem($form_height);
+  border: 1px solid $form_border;
+  box-sizing: border-box;
+  border-radius: rem($form_radius);
+  color: $form_color;
+  font-size: rem($form_fs);
+
+  &::placeholder {
+    color: $placeholder;
+  }
+
+  &:disabled {
+    border-color: $disabled_border;
+    background-color: $disabled_bg;
+    color: $disabled_color;
+  }
+
+  &:read-only {
+    border-color: $readonly_border;
+    background-color: $readonly_bg;
+    color: $readonly_color;
+  }
+}
+
+// chceckbox, radio 기준
+%label {
+  @include hide;
+  + label {
+    display: inline-flex;
+    padding-left: rem($label_pad);
+    line-height: rem($label_lh);
+    font-size: rem($label_fs);
+    color: $label_c;
+  }
+}
+
+select,
+textarea,
+input:not([type="radio"], [type="checkbox"]) {
+  @extend %form;
+}
+
+select {
+  @include select($select_pad, $select_bg);
+}
+
+input {
+  &[type="checkbox"] {
+    @extend %label;
+
+    + label {
+      @include bg($bg_chk_off, left, center);
+    }
+    &:checked {
+      + label {
+        @include bg($bg_chk_on, left, center);
+      }
+    }
+  }
+  &[type="radio"] {
+    @extend %label;
+
+    + label {
+      @include bg($bg_ra_off, left, center);
+    }
+    &:checked {
+      + label {
+        @include bg($bg_ra_off, left, center);
+      }
+    }
+  }
+}

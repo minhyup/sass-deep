@@ -1,0 +1,52 @@
+select {
+  @include select(20, 10);
+}
+
+.position-test {
+  @include bg("bg_select.svg", right 0px, top 0px, red, 20px, auto);
+  @include position(left, 50%, top, 50%);
+}
+
+ul {
+  @include bar("bg", 5, 10, 10, "bg_select.svg");
+}
+
+// .test {
+//   a {
+//     @include ellipsis(2);
+
+//     width: 100%;
+//     height: 30px;
+//     min-width: 300px;
+//   }
+// }
+body {
+  @include scroll(r, 10, red);
+}
+
+.test {
+  @include scroll(b, 10, red);
+  width: 100px;
+  overflow-x: auto;
+  height: 200px;
+}
+
+.test2 {
+  @include content("before") {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+  }
+
+  @include content("after") {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+  }
+
+  @include mobile {
+    border: 2px solid blue;
+  }
+}
